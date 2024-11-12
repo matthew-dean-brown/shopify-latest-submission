@@ -1,1 +1,155 @@
-{"sections":{"customer_spotlight_eEfc9x":{"type":"customer-spotlight","settings":{"customer_image":"shopify:\/\/shop_images\/welcome-to-my-business.jpg","customer_name":"Matthew","customer_title":"Shopify enthusiast","review_text":"Enjoys shopify code","personal_note":"Never Give Up !!"}},"seasonal_promotion_banner_mPWhkj":{"type":"seasonal-promotion-banner","settings":{"main_text":"Happy Holidays!","subtitle_text":"Enjoy our seasonal promotions.","animation_type":"snowflakes","show_button":true,"button_text":"Shop Now","button_link":"shopify:\/\/collections"}},"before_and_after_image_slider_hKNpWA":{"type":"before-and-after-image-slider","settings":{"before_image":"shopify:\/\/shop_images\/Spider-Man-Miles-Morales_PS4_09a3c6c8-4846-4061-9644-019ac259d81f.png","after_image":"shopify:\/\/shop_images\/TheLastOfUsPart2_PS4.png","before_label":"Before Text","after_label":"After Text"}},"countdown_timer_FxQQj9":{"type":"countdown-timer","settings":{"main_title":"Limited Time Offer!","subtitle":"Hurry, offer ends soon!","start_time":"2024-11-12T00:00:00","end_time":"2024-11-12T03:25:00","cta_url":"shopify:\/\/collections","cta_text":"Shop Now"}},"image_banner":{"type":"image-banner","blocks":{"heading":{"type":"heading","settings":{"heading":"Browse our latest products","heading_size":"h0"}},"button":{"type":"buttons","settings":{"button_label_1":"Shop all","button_link_1":"shopify:\/\/collections\/all","button_style_secondary_1":true,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading","button"],"settings":{"image_overlay_opacity":40,"image_height":"large","desktop_content_position":"bottom-center","show_text_box":false,"desktop_content_alignment":"center","color_scheme":"scheme-3","image_behavior":"none","mobile_content_alignment":"center","stack_images_on_mobile":false,"show_text_below":false}},"featured_collection":{"type":"featured-collection","settings":{"title":"Featured products","heading_size":"h2","description":"","show_description":false,"description_style":"body","collection":"all","products_to_show":8,"columns_desktop":4,"full_width":false,"show_view_all":true,"view_all_style":"solid","enable_desktop_slider":false,"color_scheme":"scheme-1","image_ratio":"adapt","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"quick_add":"none","columns_mobile":"2","swipe_on_mobile":false,"padding_top":44,"padding_bottom":36}},"faq_accordion_TxX8pr":{"type":"faq-accordion","blocks":{"faq_item_6UmeEL":{"type":"faq_item","settings":{"question":"How long does shipping take?","answer":"It can take from 3 - 5  business days","icon":"shopify:\/\/shop_images\/santa-is-ready-to-deliver.jpg"}},"faq_item_HnBptp":{"type":"faq_item","settings":{"question":"Is there an affliate program?","answer":"No."}}},"block_order":["faq_item_6UmeEL","faq_item_HnBptp"],"settings":{}}},"order":["customer_spotlight_eEfc9x","seasonal_promotion_banner_mPWhkj","before_and_after_image_slider_hKNpWA","countdown_timer_FxQQj9","image_banner","featured_collection","faq_accordion_TxX8pr"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "customer_spotlight_eEfc9x": {
+      "type": "customer-spotlight",
+      "settings": {
+        "customer_image": "shopify://shop_images/welcome-to-my-business.jpg",
+        "customer_name": "Matthew",
+        "customer_title": "Shopify beginner",
+        "review_text": "Enjoys coding",
+        "personal_note": "Never Give Up !!"
+      }
+    },
+    "seasonal_promotion_banner_mPWhkj": {
+      "type": "seasonal-promotion-banner",
+      "settings": {
+        "main_text": "Happy Holidays!",
+        "subtitle_text": "Enjoy our seasonal promotions.",
+        "animation_type": "snowflakes",
+        "show_button": true,
+        "button_text": "Shop Now",
+        "button_link": "shopify://collections"
+      }
+    },
+    "before_and_after_image_slider_hKNpWA": {
+      "type": "before-and-after-image-slider",
+      "settings": {
+        "before_image": "shopify://shop_images/Spider-Man-Miles-Morales_PS4_09a3c6c8-4846-4061-9644-019ac259d81f.png",
+        "after_image": "shopify://shop_images/TheLastOfUsPart2_PS4.png",
+        "before_label": "Before Text",
+        "after_label": "After Text"
+      }
+    },
+    "countdown_timer_FxQQj9": {
+      "type": "countdown-timer",
+      "settings": {
+        "main_title": "Limited Time Offer!",
+        "subtitle": "Hurry, offer ends soon!",
+        "start_time": "2024-11-12T00:00:00",
+        "end_time": "2024-11-12T03:25:00",
+        "cta_url": "shopify://collections",
+        "cta_text": "Shop Now"
+      }
+    },
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Browse our latest products",
+            "heading_size": "h0"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button"
+      ],
+      "settings": {
+        "image_overlay_opacity": 40,
+        "image_height": "large",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "faq_accordion_TxX8pr": {
+      "type": "faq-accordion",
+      "blocks": {
+        "faq_item_6UmeEL": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How long does shipping take?",
+            "answer": "It can take from 3 - 5  business days",
+            "icon": "shopify://shop_images/santa-is-ready-to-deliver.jpg"
+          }
+        },
+        "faq_item_HnBptp": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is there an affliate program?",
+            "answer": "No."
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_6UmeEL",
+        "faq_item_HnBptp"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "customer_spotlight_eEfc9x",
+    "seasonal_promotion_banner_mPWhkj",
+    "before_and_after_image_slider_hKNpWA",
+    "countdown_timer_FxQQj9",
+    "image_banner",
+    "featured_collection",
+    "faq_accordion_TxX8pr"
+  ]
+}
