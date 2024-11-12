@@ -124,7 +124,7 @@
           "type": "faq_item",
           "settings": {
             "question": "How long does shipping take?",
-            "answer": "It can take from 3 - 5  business days",
+            "answer": "A: It can take from 3 - 5  business days",
             "icon": "shopify://shop_images/santa-is-ready-to-deliver.jpg"
           }
         },
@@ -132,7 +132,7 @@
           "type": "faq_item",
           "settings": {
             "question": "Is there an affliate program?",
-            "answer": "No."
+            "answer": "A: No."
           }
         }
       },
