@@ -1,0 +1,58 @@
+{{ 'customer-spotlight.css' | asset_url | stylesheet_tag }}
+<section>
+  <h3>Customer Spotlight!!✨</h3>
+  <div class="customer-spotlight" >
+  <div class="customer-image">
+    {% if section.settings.customer_image %}
+      <img src="{{ section.settings.customer_image | image_url: width:300 }}" alt="{{ section.settings.customer_name }}" width="30%" height="30%">
+    {% endif %}
+  </div>
+  <div class="customer-details">
+    <h3>{{ section.settings.customer_name }}</h3>
+    <p><em>{{ section.settings.customer_title }}</em></p>
+    <blockquote>
+      <p>"{{ section.settings.review_text }}"</p>
+    </blockquote>
+    <p><strong>Note from {{ section.settings.customer_name }}:</strong> {{ section.settings.personal_note }}</p>
+  </div>
+</div>
+</section>
+
+{% schema %}
+{
+  "name": "Customer Spotlight",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "customer_image",
+      "label": "Customer Image"
+    },
+    {
+      "type": "text",
+      "id": "customer_name",
+      "label": "Customer Name"
+    },
+    {
+      "type": "text",
+      "id": "customer_title",
+      "label": "Customer Title"
+    },
+    {
+      "type": "textarea",
+      "id": "review_text",
+      "label": "Review Text"
+    },
+    {
+      "type": "textarea",
+      "id": "personal_note",
+      "label": "Personal Note"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Customer Spotlight",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

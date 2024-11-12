@@ -1,0 +1,85 @@
+{{ 'seasonal-promotion-banner.css' | asset_url | stylesheet_tag }}
+
+<section class="parent">
+  <div class="seasonal-promotion-banner">
+  <div class="banner-content">
+    <h2>{{ section.settings.main_text }}</h2>
+    <p>{{ section.settings.subtitle_text }}</p>
+    
+    {% if section.settings.show_button %}
+      <a href="{{ section.settings.button_link }}" class="cta-button">{{ section.settings.button_text }}</a>
+    {% endif %}
+  </div>
+
+  <!-- Conditional Animations -->
+  <div class="animation-container">
+    {% case section.settings.animation_type %}
+      {% when 'snowflakes' %}
+        <div class="snowflakes-animation">*</div>
+      {% when 'leaves' %}
+        <div class="leaves-animation">*</div>
+      {% when 'sparkles' %}
+        <div class="sparkles-animation">*</div>
+    {% endcase %}
+  </div>
+</div>
+</section>
+
+
+
+
+
+{% schema %}
+{
+  "name": "Seasonal Promotion Banner",
+  "settings": [
+    {
+      "type": "text",
+      "id": "main_text",
+      "label": "Main Text",
+      "default": "Happy Holidays!"
+    },
+    {
+      "type": "text",
+      "id": "subtitle_text",
+      "label": "Subtitle Text",
+      "default": "Enjoy our seasonal promotions."
+    },
+    {
+      "type": "select",
+      "id": "animation_type",
+      "label": "Animation Effect",
+      "default": "snowflakes",
+      "options": [
+        { "value": "snowflakes", "label": "Snowflakes" },
+        { "value": "leaves", "label": "Leaves" },
+        { "value": "sparkles", "label": "Sparkles" }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "show_button",
+      "label": "Show CTA Button",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Shop Now"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link",
+      "default": "/collections/all"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Seasonal Promotion Banner",
+      "category": "Promotion"
+    }
+  ]
+}
+{% endschema %}

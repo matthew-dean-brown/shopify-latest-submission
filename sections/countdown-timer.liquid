@@ -1,0 +1,95 @@
+{{ 'countdown-timer.css' | asset_url | stylesheet_tag }}
+<div class="countdown-timer-section">
+  <div class="countdown-timer-text">
+    <h2>{{ section.settings.main_title }}</h2>
+    <p>{{ section.settings.subtitle }}</p>
+  </div>
+
+  <div class="countdown-timer">
+    <div id="countdown"></div>
+  </div>
+
+  <a href="{{ section.settings.cta_url }}" class="cta-button">
+    {{ section.settings.cta_text }}
+  </a>
+</div>
+
+{% schema %}
+  {
+    "name": "Countdown Timer",
+    "settings": [{
+      "type": "text",
+      "label": "Main Title",
+      "id": "main_title",
+      "default":"Limited Time Offer!"
+    },{
+      "type": "text",
+      "label": "Subtitle",
+      "id": "subtitle",
+      "default": "Hurry, offer ends soon!"
+    },
+    {
+      "type": "text",
+      
+      "id": "start_time",
+      "label": "Start Date and Time format (YYYY-MM-DDTHH:M M:SS)24 hour format",
+      "default": "2024-11-09T00:00:00"
+    },
+    {
+      "type": "text",
+      "label": "End Date and Time (YYYY-MM-DDTHH:MM:SS)24 hour format",
+      "id": "end_time",
+      "default": "2024-11-10T00:00:00"
+    },
+    {
+      "type": "url",
+      "label": "Call to Action Button URL",
+      "id": "cta_url",
+      "default": "/collections"
+    },
+    {
+      "type": "text",
+      "label": "Call to Action Button Text",
+      "id": "cta_text",
+      "default": "Shop Now"
+    }],
+    "presets": [
+    {
+      "name": "Countdown Timer",
+      "category": "Custom"
+    }
+  ]
+  }
+{% endschema %}
+
+<script>
+  // Convert the start and end times from Liquid into JavaScript Date objects
+  let startDate = new Date("{{ section.settings.start_time }}")
+  let endDate = new Date("{{ section.settings.end_time }}")
+ 
+  
+  
+  function updateCountdown() {
+    let current = new Date()
+    let distance = endDate - current
+    // count down only starts when current date is passed the start date
+    if (current < startDate) {
+    document.getElementById("countdown").innerText= "Countdown starts soon!";
+    } else if (distance < 0) {
+      // added message incase timer would run out
+      // document.getElementById("countdown").innerText= "EXPIRED"
+      document.getElementById("countdown").innerText= 0 + "d " + 0 + "h " + 0 + "m " + 0 + "s "
+    } else {
+      let days = Math.floor(distance / (1000 * 60 * 60 * 24)) 
+      let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+      let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
+      let seconds = Math.floor((distance % (1000 * 60)) / 1000)
+      
+      document.getElementById("countdown").innerText=
+        days + "d " + hours + "h " + minutes + "m " + seconds + "s "
+    }
+  }
+  setInterval(updateCountdown, 1000)
+  
+  
+</script>
