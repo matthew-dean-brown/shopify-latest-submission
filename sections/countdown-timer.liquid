@@ -71,6 +71,7 @@
   
   function updateCountdown() {
     let current = new Date()
+    // Calculates the time left in milliseconds
     let distance = endDate - current
     // count down only starts when current date is passed the start date
     if (current < startDate) {
@@ -78,6 +79,7 @@
     } else if (distance < 0) {
       // added message incase timer would run out
       // document.getElementById("countdown").innerText= "EXPIRED"
+      // Displays 0 for all values if time has ended
       document.getElementById("countdown").innerText= 0 + "d " + 0 + "h " + 0 + "m " + 0 + "s "
     } else {
       let days = Math.floor(distance / (1000 * 60 * 60 * 24)) 
