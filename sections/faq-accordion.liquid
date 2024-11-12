@@ -26,6 +26,7 @@
   // adding click function to the question element to trigger the answer to open
   faqQuestions.forEach(e=>{
     e.addEventListener('click', ()=>{
+      // targeting the element that is a sibling of faq-question which is faq-answer to apply the CSS class
       e.nextElementSibling.classList.toggle('open')
     })
   })
