@@ -1,0 +1,91 @@
+.parent{
+  z-index:-2;
+}
+.seasonal-promotion-banner {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+.animation-container{
+    position:absolute;
+    width:100%;
+    height:50%;
+    top:10px;
+    z-index:-1
+    
+}
+  .banner-content h2 {
+    font-size: 2em;
+    margin: 0;
+  }
+
+  .banner-content p {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+  }
+
+  .cta-button {
+    margin-top: 1em;
+    padding: 10px 20px;
+    color: white;
+    background-color: #0073e6;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    z-index:1;
+  }
+
+  /* Snowflakes Animation */
+  .snowflakes-animation {
+    background: url("https://cdn.shopify.com/s/files/1/0900/1802/1656/files/snowflake.svg?v=1731246412") repeat;
+    opacity:0.3;
+    background-size: 100px 100px;
+    animation: snowfall 15s linear infinite;
+    height: 200px;
+    margin-left: -50px;
+  }
+
+
+  @keyframes snowfall {
+    0%{ transform: translateY(0%); }
+    50% { transform: translateY(100%); }
+    100% { transform: translateY(0%); }
+  }
+
+  /* Leaves Animation */
+  .leaves-animation {
+    background: url("https://cdn.shopify.com/s/files/1/0900/1802/1656/files/leaf.svg?v=1731259998") repeat;
+    animation: leaf-moving 5s linear infinite;
+    opacity:0.3;
+    background-size: 100px 100px;
+    height: 200px;
+    margin-left: -50px;
+  }
+
+  @keyframes leaf-moving {
+    0% { transform:  rotate(0deg) }
+    25% {transform: rotate(2deg)}
+    50% {transform:  rotate(0deg)}
+    75%{transform:  rotate(-2deg)}
+    100% { transform: rotate(0deg) }
+  }
+
+  /* Sparkles Animation */
+  .sparkles-animation {
+    background: url("https://cdn.shopify.com/s/files/1/0900/1802/1656/files/glitter-2.svg?v=1731259052") repeat;
+    animation: sparkle-effect 3s ease-in-out infinite;
+    background-size: 100px 100px;
+    height: 200px;
+    margin-left: -50px;
+  }
+
+  @keyframes sparkle-effect {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 0.5; }
+  }
+
+@media (max-width:425px){
+  div.snowflakes-animation{
+    max-width: 429px;
+  }
+}
